@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain Curator Tool Catalog",
+  "type": "object",
+  "properties": {
+    "domain": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string" },
+          "summary": { "type": "string" },
+          "categories": { "type": "array", "items": { "type": "string" } },
+          "fit": {
+            "type": "object",
+            "properties": {
+              "overall": { "type": "number" },
+              "breakdown": { "type": "object" },
+              "rationale": { "type": "string" },
+              "confidence": { "type": "number" }
+            },
+            "required": ["overall", "rationale"]
+          },
+          "last_evaluated": { "type": "string", "format": "date-time" },
+          "source_x_posts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": { "type": "string" },
+                "date": { "type": "string" },
+                "key_quote": { "type": "string" }
+              }
+            }
+          }
+        },
+        "required": ["name", "url", "fit"]
+      }
+    }
+  },
+  "required": ["domain", "items"]
+}

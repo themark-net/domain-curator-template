@@ -1,0 +1,7 @@
+{
+  "_comment": "Canonical structured catalog for this domain. Source of truth. Populated exclusively by the processing pipeline. Manual edits only for corrections with commit message. Validate against data/tools.schema.json.",
+  "domain": "[populated from config/domain-params.md at first process run]",
+  "last_updated": "2026-07-14T13:37:00Z",
+  "schema_version": "1.0",
+  "items": []
+}
