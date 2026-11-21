@@ -1,5 +1,7 @@
 # domain-curator-template
 
+> **Status: deprecated** (Nov 2026). Deprecated; do not build on this. Superseded by the Deanery catalog.
+
 Generalized template for building domain-specific tool/stack catalogs seeded from X posts and evaluated for fit by LLM against explicit, user-defined stack parameters and goals.
 
 This is the reusable skeleton extracted from the working pattern in `themark-net/pfy-mentat` (local LLM dev tools/agents/frameworks) and `themark-net/sysadmin-tools` (sysadmin/homelab/infra). Clone it, define your domain once in `config/domain-params.md`, seed posts, and run the pipeline to produce a scored, categorized `data/tools.json` + human-readable `TOOLS.md`.
